@@ -14,6 +14,7 @@ export default class person {
         this.vehicles = reqData.vehicles
         this.starships = reqData.starships
         this.url = reqData.url
+        this.id = reqData.url
     }
 
     // get filmsData () {

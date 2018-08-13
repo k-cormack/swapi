@@ -71,6 +71,7 @@ export default class SwapiController {
     getPeople() {
         console.log("hello from SwapiController")
         swapiService.getPeople(drawPeople, drawError)
+        console.log(swapiService.people)
     }
     getPlanets() {
         console.log("hello from SwapiController")

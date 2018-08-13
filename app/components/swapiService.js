@@ -2,7 +2,7 @@ import starship from "../../app/models/Starship.js"
 import person from "../../app/models/Person.js"
 import planet from "../../app/models/Planet.js"
 
-
+let people = {}
 
 export default class SwapiService {
 
@@ -19,12 +19,18 @@ export default class SwapiService {
             .then(res => res.json())
             // .then(res => {
             //     let myPeople = res.results.map(rawPerson => {
-            //         return new person(rawPerson)
+            //         let person = new person(rawPerson)
+            //          people[person.id] = person
+            //        return person
             //     })
             //     draw(myPeople)
             // })
             .then(draw)
             .catch(drawError)
+
+    }
+    get people() {
+        return people
     }
     getPlanets(draw, drawError) {
         console.log("This is SwapiService")
