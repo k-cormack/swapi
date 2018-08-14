@@ -7,7 +7,7 @@ import SwapiController from "./components/swapiController.js";
 class App {
     constructor() {
         this.controllers = {
-            swapi: new SwapiController
+            swapi: new SwapiController ()
         }
     }
 }
