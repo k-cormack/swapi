@@ -1,5 +1,5 @@
-import starship from "../../app/models/Starship.js"
-import person from "../../app/models/Person.js"
+import starship from "../app/models/Starship.js"
+import person from "../app/models/Person.js"
 import planet from "../app/models/Planet.js"
 
 let people = {}
